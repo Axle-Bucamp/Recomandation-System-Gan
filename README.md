@@ -1,3 +1,4 @@
+(old)
 # Recomandation-System-Gan
 a deep Gan collaborative recommandation system to enhance user exploration of new item. The goal here is to train a model to not only judge wich recommandation is a good one based on the user but also to learn wich new item could fit in to let the user explore new content with no need of random variable.
 
