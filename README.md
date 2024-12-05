@@ -1,27 +1,77 @@
-# Moteur de recommandation utilisant un modèle GAN à des fin exploratoire
+# 🎬 Moteur de Recommandation Exploratoire par GAN
 
-Dans le cadre de mon mèmoire de fin d'annnée à l'IAE de Lille nous avons décidé, mon tuteur et moi même, de concevoir un système de recommandation permettant plus souvant aux utilisateur d'explorer de nouveaux films sans les frustrer, afin de résoudre le biais des "echo chambers". Pour ce faire nous nous sommes tourné vers les réseaux créatif de type GAN et semi GAN. Nous avons obtenue de bon résultat et les publions ici sous licence.
+## 🔍 Contexte du Projet
 
+Ce projet de recherche, réalisé dans le cadre d'un mémoire de fin d'année à l'IAE de Lille, vise à résoudre le problème des "chambres d'écho" dans les systèmes de recommandation de films. L'objectif est de permettre aux utilisateurs de découvrir de nouveaux contenus de manière plus dynamique et moins frustrante.
 
-## Comment l'utiliser
+## 🚀 Approche Scientifique
 
-Que ce soit pour une revue par les pairs ou votre propre curiosité, le code ici possède deux principaux modèle. Un plus ancien et plus aléatoire comparant des utilisateurs prit aux hasard (le code fonctionne principalement sur l'ancien dataset de movie lens dont les deux fichiers son fournies) . et une autre version plus récente et bien plus optimisé utilisant les 25 millions d'utilisateur de movie lens. Ce modèle est plus précis et n'as pas de dépendance externe car les fichiers sont téléchargés dans le script. 
+Utilisation de Réseaux Antagonistes Génératifs (GAN) pour :
+- Briser les biais de recommandation traditionnels
+- Favoriser la diversité et l'exploration culturelle
+- Générer des recommandations plus créatives et inattendues
 
-Ancien modèle :
-  - Gan_recomandation_WithTimestamp
-  - Demo_recomandation_system
-  - recomandation_system_CalculDiversityOverTime
-  
-  Dépendance :
-   ajouter dans le dossier racine les datasets demandés ancien ou nouveau
-   avoir entrainé un modèle au préalable pour les scripts de test
+## 🗂️ Structure du Projet
 
-Nouveau Modèle :
-  - Training_Optimized_recommandationGAN
-  - CalculDiversityOverTime_Optimized_recommandationGAN
-  - APP_demo_Optimized_recommandationGAN
-  
-  Dépendance :
-    avoir entrainé un modèle au préalable pour les scripts de test
+### Anciens Modèles (Dataset MovieLens Original)
+- `Gan_recomandation_WithTimestamp`
+- `Demo_recomandation_system`
+- `recomandation_system_CalculDiversityOverTime`
 
-Si vous souhaitez en savoir plus, le mémoire traitant le sujet est mit dans le GIT, Gare à vous en cas de mauvaise utilisation.
+### Nouveaux Modèles (25 Millions d'Utilisateurs)
+- `Training_Optimized_recommandationGAN`
+- `CalculDiversityOverTime_Optimized_recommandationGAN`
+- `APP_demo_Optimized_recommandationGAN`
+
+## 🔧 Prérequis et Dépendances
+
+### Anciens Modèles
+- Télécharger les datasets MovieLens
+- Placer les fichiers dans le dossier racine
+- Pré-entraîner un modèle avant les tests
+
+### Nouveaux Modèles
+- Pas de dépendances externes
+- Scripts auto-suffisants pour le téléchargement des données
+- Modèle à entraîner avant utilisation des scripts de test
+
+## 📦 Installation
+
+Je vous recommande d'utiliser google collab qui permet de générer l'environnement nécessaire au lancement de chaque partie.
+
+## 🧪 Utilisation
+
+### Entraînement du Modèle
+Notebook : 
+- Training_Optimized_recommandationGAN
+
+### Démonstration
+une fois le model entrainé extrait et join, notebook : 
+- Demo_recomandation_system
+
+## 📊 Méthodologie
+
+Notre approche combine :
+- Apprentissage par réseaux antagonistes
+- Analyse de la diversité des recommandations
+- Optimisation continue du modèle
+
+## 🔬 Recherche Académique
+
+Pour plus de détails, consultez le mémoire inclus dans le dépôt Git. Une lecture attentive et une compréhension approfondie sont recommandées.
+
+⚠️ **Avertissement** : Ce projet est un travail de recherche académique. Une utilisation rigoureuse et éthique est impérative.
+
+## 📄 Licence
+
+[MIT]
+
+## 👥 Contacts
+
+- Auteur : [Bucamp Axle]
+- Tuteur académique : [Dominique Crié]
+- Institution : IAE de Lille
+
+## 🙏 Contributions
+
+Les contributions, retours et suggestions sont les bienvenus sous forme d'issues ou de pull requests.
